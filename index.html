@@ -5,68 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>REALIDAR | Laboratorio de Realidad Aumentada</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="aos.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <h1>Explora lo invisible. Vive lo imposible.</h1>
-      <a href="https://realidar.github.io/realidar-express/" class="cta">Probar REALIDAR EXPRESS</a>
-    </div>
+  <header class="header" data-aos="fade-down">
+    <img src="logo.png" alt="REALIDAR Logo" class="logo" />
+    <h1>Una nueva forma de ver el mundo</h1>
   </header>
 
-  <section class="intro">
-    <h2>¿Qué es REALIDAR?</h2>
-    <p>
-      REALIDAR es un laboratorio creativo especializado en realidad aumentada.
-      Diseñamos experiencias inmersivas que transforman entornos reales en
-      historias vivas. Nuestro enfoque une tecnología y narrativa para generar
-      impacto.
-    </p>
-  </section>
+  <main>
+    <section class="intro" data-aos="fade-up">
+      <p>REALIDAR es un laboratorio creativo que convierte ideas en experiencias inmersivas con tecnología de realidad aumentada.</p>
+      <a href="https://realidar.github.io/realidar-express/" class="cta-button" data-aos="zoom-in">Explorar REALIDAR EXPRESS</a>
+    </section>
+  </main>
 
-  <section class="productos">
-    <h2>Productos</h2>
-    <div class="producto">
-      <h3>REALIDAR EXPRESS</h3>
-      <p>Activa logos en realidad aumentada desde el navegador.</p>
-      <a href="https://realidar.github.io/realidar-express/">Ver demo</a>
-    </div>
-    <div class="producto">
-      <h3>REALIDAR MOMENTS</h3>
-      <p>Frases personalizadas en RA para eventos y redes sociales.</p>
-      <a href="#">Pronto</a>
-    </div>
-    <div class="producto">
-      <h3>REALIDAR TRAILER</h3>
-      <p>Recorridos inmersivos para cines, ferias y espectáculos.</p>
-      <a href="#">Pronto</a>
-    </div>
-  </section>
-
-  <section class="testimonio">
-    <blockquote>
-      “Nunca imaginé ver el logo de mi empresa flotando frente a mí. Es como
-      magia, pero real.”
-    </blockquote>
-    <cite>— Cliente de prueba</cite>
-  </section>
-
-  <section class="contacto">
-    <h2>Contáctanos</h2>
-    <p>
-      Escríbenos a <a href="mailto:godoyaudiovisual@gmail.com">godoyaudiovisual@gmail.com</a><br />
-      o contáctanos por WhatsApp.
-    </p>
-  </section>
-
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 REALIDAR. Todos los derechos reservados.</p>
-    <div class="redes">
-      <a href="#">GitHub</a>
-      <a href="#">TikTok</a>
-      <a href="#">Instagram</a>
-    </div>
   </footer>
+
+  <script src="aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
-
