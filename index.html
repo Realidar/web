@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,26 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>REALIDAR | Laboratorio de Realidad Aumentada</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <header class="header" data-aos="fade-down">
-    <img src="logo.png" alt="REALIDAR Logo" class="logo" />
-    <h1>Una nueva forma de ver el mundo</h1>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="content" data-aos="fade-up">
+      <h1>Emoción, experiencia y una nueva forma de ver el mundo.</h1>
+      <a href="#productos" class="cta-button">Conoce nuestros servicios</a>
+    </div>
   </header>
 
-  <main>
-    <section class="intro" data-aos="fade-up">
-      <p>REALIDAR es un laboratorio creativo que convierte ideas en experiencias inmersivas con tecnología de realidad aumentada.</p>
-      <a href="https://realidar.github.io/realidar-express/" class="cta-button" data-aos="zoom-in">Explorar REALIDAR EXPRESS</a>
-    </section>
-  </main>
+  <section id="sobre" data-aos="fade-right">
+    <h2>Sobre REALIDAR</h2>
+    <p>REALIDAR es un laboratorio creativo especializado en experiencias inmersivas con realidad aumentada. Nuestra misión es conectar marcas con personas a través de tecnología que emociona.</p>
+  </section>
 
-  <footer data-aos="fade-up">
+  <section id="valores" data-aos="fade-left">
+    <h2>Valores</h2>
+    <ul>
+      <li>Innovación</li>
+      <li>Emoción</li>
+      <li>Accesibilidad</li>
+      <li>Impacto Visual</li>
+    </ul>
+  </section>
+
+  <section id="productos" data-aos="fade-up">
+    <h2>Productos</h2>
+    <div class="productos">
+      <div class="producto"><h3>REALIDAR EXPRESS</h3><p>Tu logo en realidad aumentada. Rápido, accesible y sin apps.</p></div>
+      <div class="producto"><h3>REALIDAR MOMENTS</h3><p>Texto 3D personalizado para campañas o momentos únicos.</p></div>
+      <div class="producto"><h3>REALIDAR TRAILER</h3><p>Recorridos inmersivos con RA para cines, eventos o espacios físicos.</p></div>
+    </div>
+  </section>
+
+  <section id="contacto" data-aos="fade-in">
+    <h2>Contacto</h2>
+    <form action="https://formsubmit.co/contacto.realidar@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="message" placeholder="Escríbenos tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <a href="https://wa.me/56976407423" class="whatsapp-button">Contactar por WhatsApp</a>
+  </section>
+
+  <footer>
     <p>&copy; 2025 REALIDAR. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
